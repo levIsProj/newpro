@@ -530,24 +530,21 @@ h2 {
 
 ul {
     margin-left: 70px !important;
-    width: 265px;
+    width: 315px;
     height: 104px;
 }
 
-li {
-    width: 125px;
-    height: 18px;
-    float: left;
-    margin-top: 5px;
-}
 
-li a {
+li button {
     font-size: 18px;
     font-weight: 800 !important;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    ;
-
+     width: 150px;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    color: #000;
 }
 
 li a:active {
@@ -569,7 +566,7 @@ ul:after {
 }
 
 .ddarow {
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 8px;
 }
 
@@ -579,7 +576,7 @@ ul:after {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #fff;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .scrolset {
@@ -590,29 +587,6 @@ ul:after {
     padding-top: 50px;
     background: url(../img/Vector1.svg)no-repeat 100% -5%;
 }
-
-
-.b-tab {
-    display: none;
-    transition: 1s;
-
-}
-
-.b-tab.active {
-    display: block;
-    height: auto;
-}
-
-.b-nav-tab {
-    display: inline-block;
-    padding: 20px;
-}
-
-.b-nav-tab.active {
-    color: #000;
-    text-decoration: none;
-}
-
 
 
 .partners {
@@ -637,7 +611,6 @@ ul:after {
 
 
 .part-scroll {
-
     height: 58px;
     margin-top: px;
     position: relative;
@@ -664,23 +637,23 @@ ul:after {
 .scrollset {
     margin-top: 50px;
     padding-top: 10px;
-    background: url(../img/Vector1.svg)no-repeat 100.1% 32%;
+    background: url(../img/Vector1.svg)no-repeat 100.1% 33%;
 }
 
 .scrollset button {
     height: 58px;
     margin-top: -5px;
-    width:246px;
-    border:solid 1px #fff;
+    width: 246px;
+    border: solid 1px #fff;
     border-radius: 5px;
     margin-right: 50px;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: 0.05em;
-    
+
 }
 
-.scrollset button:hover{
+ .button_ani:hover {
     background: #FFF;
     color: #000
 }
@@ -688,43 +661,46 @@ ul:after {
 .swiper-scrollbar {
     margin-top: 20px;
     height: 40px;
-    width: 79%; 
+    width: 79%;
     position: relative;
-    background: none!important;
+    background: none !important;
 
 }
-.swiper-scrollbar::after{
+
+.swiper-scrollbar::after {
     content: "";
-    top:3px;
+    top: 3px;
     bottom: 0;
     width: 100%;
-    height: 1px!important;
-    border: solid 1px #fff!important;
+    height: 1px !important;
+    border: solid 1px #fff !important;
     position: absolute;
-    z-index: 1px;
+    z-index: 1;
 }
 
 .swiper-scrollbar-drag {
-    height: 8px!important;
-    border:solid 1px #fff;
-    width: 20%!important;
-    background: #fff!important;
+    height: 8px !important;
+    border: solid 1px #fff;
+    width: 20% !important;
+    background: #000 !important;
+    z-index: 2;
 
 }
 
-.swiper-scrollbar1{
+.swiper-scrollbar1 {
     margin-top: -5px;
     height: 40px;
-    width: 79%; 
+    width: 79%;
     position: relative;
 }
-.swiper-scrollbar1::after{
+
+.swiper-scrollbar1::after {
     content: "";
-    top:3px;
+    top: 3px;
     bottom: 0;
     width: 127.5%;
-    height: 1px!important;
-    border: solid 1px #fff!important;
+    height: 1px !important;
+    border: solid 1px #fff !important;
     position: absolute;
     z-index: 1px;
 }
@@ -736,29 +712,37 @@ ul:after {
 }
 
 .swiper-scrollbar1 .swiper-scrollbar-drag {
-    height: 8px!important;
-    border:solid 1px #fff;
-    width: 25%!important;
-    background: #fff!important;
+    height: 8px !important;
+    border: solid 1px #fff;
+    width: 25% !important;
+    background: #000 !important;
 
 }
 
 
 .ticket {
-    margin-top: 135px;
+    margin-top: 134px;
     height: 725px;
     float: left;
     position: relative;
 }
 
 .tick {
-    margin-top: 35px;
-    display: flex;
+    margin-top:-8px;
+   
     align-items: center;
 
 }
-.tick .ddarow{
-    margin-top: -1px;
+
+.tick .ddarow {
+  margin-left:;
+}
+
+.tick .ddarow img{
+    margin-left: 10px;
+}
+.tick .ddtitle {
+  margin-left:12px;
 }
 
 button,
@@ -779,6 +763,7 @@ button,
 
 .ticket_block {
     margin-top: 12px;
+    margin-left: px;
 }
 
 .ticket_subtitle {
@@ -867,6 +852,7 @@ button,
     margin-top: 44px;
 }
 
+
 .place_txt {
     font-size: 18px;
     line-height: 18px;
@@ -882,7 +868,7 @@ button,
 
 .place_button {
     margin-top: 27px;
-    margin-left: 2px;
+    margin-left: 2.5px;
 }
 
 .place_button button {
@@ -899,4 +885,44 @@ button,
     color: #fff;
     border: solid 1px;
     border-radius: 5px;
+
+}
+
+@media(max-width:991px){
+    .place_txt{
+        margin-left: 0px;
+    }
+}
+
+
+
+.scheme {
+    float: left;
+}
+
+.scheme h2 {
+    float: left;
+    margin-bottom: -2px;
+}
+
+.scimg{
+    margin-top:43px;
+}
+
+.how h2{
+    margin-top: 160px;
+    margin-bottom: -2px;
+    margin-left: 
+}
+
+@media(max-width:1268px) {
+   .scheme {
+    margin-top: 400px;
+}
+}
+
+@media(max-width:968px) {
+   .scheme {
+    margin-top: 500px;
+}
 }

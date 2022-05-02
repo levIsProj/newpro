@@ -1,33 +1,4 @@
-'use strict';
 
-function Tabs() {
-    var bindAll = function () {
-        var menuElements = document.querySelectorAll('[data-tab]');
-        for (var i = 0; i < menuElements.length; i++) {
-            menuElements[i].addEventListener('click', change, false);
-        }
-    }
-
-    var clear = function () {
-        var menuElements = document.querySelectorAll('[data-tab]');
-        for (var i = 0; i < menuElements.length; i++) {
-            menuElements[i].classList.remove('active');
-            var id = menuElements[i].getAttribute('data-tab');
-            document.getElementById(id).classList.remove('active');
-        }
-    }
-
-    var change = function (e) {
-        clear();
-        e.target.classList.add('active');
-        var id = e.currentTarget.getAttribute('data-tab');
-        document.getElementById(id).classList.add('active');
-    }
-
-    bindAll();
-}
-
-var connectTabs = new Tabs();
 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
@@ -63,10 +34,10 @@ var slider = new Swiper(".swiperPartner",{
     },
     breakpoints: {
 		1920: {
-			slidesOffsetBefore:292,
+			slidesOffsetBefore:290,
 		},
         1025: {
-			slidesOffsetBefore:270,
+			slidesOffsetBefore:290,
 		},
 		800: {
 			slidesOffsetBefore:120,
@@ -89,3 +60,21 @@ $(".c").on('click', function (event) {
     $(event.currentTarget).toggleClass("slider-AN1"),
         $(".ant",event.currentTarget).toggleClass("ant1")
 });
+
+var div = document.getElementsByClassName('dropdown-menu');
+
+  for(var  i =0;i<div.length;i++){
+
+  for(var  j =0;j<div[i].children.length;j++){
+
+   div[i].children[j].addEventListener('click',function(){
+
+     this.parentNode.previousElementSibling.innerHTML = this.textContent;
+   })
+  }
+  }
+
+ var someTabTriggerEl = document.querySelector('#pill1')
+  var tab = new bootstrap.Tab(someTabTriggerEl)
+
+  tab.show()
